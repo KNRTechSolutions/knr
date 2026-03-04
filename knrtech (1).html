@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ═══════════════════════════════════════════════
+       PRIMARY META TAGS
+  ═══════════════════════════════════════════════ -->
+  <title>KNR Tech Solutions | Web, Android & Blockchain Development – Bangalore</title>
+  <meta name="title" content="KNR Tech Solutions | Web, Android & Blockchain Development – Bangalore" />
+  <meta name="description" content="KNR Tech Solutions is a top-rated web design, Android development, Blockchain, Data Science and SAP (ABAP SD GTS) company in Bangalore, Marathahalli. We build world-class digital solutions for businesses of all sizes." />
+  <meta name="keywords" content="web development company bangalore, android development bangalore, blockchain technology bangalore, data science bangalore, SAP ABAP bangalore, KNR Tech Solutions, app development marathahalli, React Angular development, e-commerce development bangalore" />
+  <meta name="author" content="KNR Tech Solutions" />
+  <meta name="robots" content="index, follow" />
+  <meta name="language" content="English" />
+  <meta name="geo.region" content="IN-KA" />
+  <meta name="geo.placename" content="Bangalore" />
+  <meta name="theme-color" content="#050810" />
+
+  <!-- ═══════════════════════════════════════════════
+       OPEN GRAPH / FACEBOOK
+  ═══════════════════════════════════════════════ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://knrtech.in/" />
+  <meta property="og:title" content="KNR Tech Solutions | Web, Android & Blockchain Development – Bangalore" />
+  <meta property="og:description" content="Experienced team of web design, Android development, Blockchain, Data Science and SAP experts delivering world-class digital solutions in Bangalore." />
+  <meta property="og:image" content="https://knrtech.in/assets/img/logo.png" />
+  <meta property="og:site_name" content="KNR Tech Solutions" />
+  <meta property="og:locale" content="en_IN" />
+
+  <!-- ═══════════════════════════════════════════════
+       TWITTER
+  ═══════════════════════════════════════════════ -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://knrtech.in/" />
+  <meta name="twitter:title" content="KNR Tech Solutions | Web, Android & Blockchain Development – Bangalore" />
+  <meta name="twitter:description" content="Experienced team of web design, Android development, Blockchain, Data Science and SAP experts in Bangalore." />
+  <meta name="twitter:image" content="https://knrtech.in/assets/img/logo.png" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://knrtech.in/" />
+
+  <!-- ═══════════════════════════════════════════════
+       STRUCTURED DATA (JSON-LD)
+  ═══════════════════════════════════════════════ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "KNR Tech Solutions",
+    "url": "https://knrtech.in",
+    "logo": "https://knrtech.in/assets/img/logo.png",
+    "description": "Web design, Android development, Blockchain, Data Science and SAP experts in Bangalore.",
+    "telephone": "+91-6300816832",
+    "email": "narayana@knrtech.in",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "35/A ITI Layout HSR Layout",
+      "addressLocality": "Bangalore",
+      "addressRegion": "Karnataka",
+      "postalCode": "560068",
+      "addressCountry": "IN"
+    },
+    "sameAs": ["https://knrtech.in"],
+    "areaServed": "Bangalore, India",
+    "serviceType": ["Web Development", "Android Development", "Blockchain", "Data Science", "SAP ABAP"]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #050810;
+      --bg2: #080d1a;
+      --surface: #0d1425;
+      --border: rgba(255,255,255,0.07);
+      --accent: #4f8eff;
+      --accent2: #a259ff;
+      --accent3: #00e5c0;
+      --text: #e8eaf6;
+      --muted: #7a85a3;
+      --white: #ffffff;
+      --radius: 16px;
+      --font-head: 'Syne', sans-serif;
+      --font-body: 'DM Sans', sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    ::-webkit-scrollbar { width: 5px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 10px; }
+
+    /* GRID BG */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(79,142,255,0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(79,142,255,0.035) 1px, transparent 1px);
+      background-size: 60px 60px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 48px;
+      height: 68px;
+      background: rgba(5,8,16,0.88);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-logo {
+      font-family: var(--font-head);
+      font-weight: 800;
+      font-size: 1.25rem;
+      color: var(--white);
+      text-decoration: none;
+      letter-spacing: -0.5px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+      display: inline-block;
+      animation: pulse 2s infinite;
+    }
+
+    .nav-links { display: flex; align-items: center; gap: 4px; list-style: none; }
+
+    .nav-links a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      padding: 6px 14px;
+      border-radius: 8px;
+      transition: all 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--white); background: rgba(255,255,255,0.05); }
+
+    .nav-cta {
+      background: var(--accent) !important;
+      color: var(--white) !important;
+      margin-left: 8px;
+    }
+
+    .nav-cta:hover { opacity: 0.88; }
+
+    /* ── MARQUEE BANNER ── */
+    .marquee-banner {
+      background: linear-gradient(90deg, var(--accent2), var(--accent), var(--accent3), var(--accent), var(--accent2));
+      background-size: 300% 100%;
+      animation: gradShift 6s linear infinite;
+      padding: 9px 0;
+      overflow: hidden;
+      margin-top: 68px;
+      position: relative;
+      z-index: 10;
+    }
+
+    @keyframes gradShift { 0%{background-position:0% 50%} 100%{background-position:100% 50%} }
+
+    .marquee-track { display: flex; width: max-content; animation: marquee 28s linear infinite; }
+    .marquee-track span {
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: 0.75rem;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.95);
+      padding: 0 40px;
+      white-space: nowrap;
+    }
+
+    @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative; z-index: 1;
+      padding: 100px 48px 70px;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .hero-glow {
+      position: absolute;
+      top: -80px; left: 50%; transform: translateX(-50%);
+      width: 900px; height: 600px;
+      background: radial-gradient(ellipse at center,
+        rgba(79,142,255,0.2) 0%,
+        rgba(162,89,255,0.12) 40%,
+        transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(79,142,255,0.1);
+      border: 1px solid rgba(79,142,255,0.28);
+      border-radius: 100px;
+      padding: 6px 18px;
+      font-size: 0.78rem;
+      color: var(--accent);
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      margin-bottom: 32px;
+      animation: fadeUp 0.6s ease both;
+    }
+
+    .badge-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent3); animation: pulse 1.5s infinite; }
+
+    h1 {
+      font-family: var(--font-head);
+      font-weight: 800;
+      font-size: clamp(2.8rem, 6vw, 5rem);
+      line-height: 1.06;
+      letter-spacing: -2px;
+      color: var(--white);
+      max-width: 880px;
+      margin: 0 auto 24px;
+      animation: fadeUp 0.7s ease 0.1s both;
+    }
+
+    .grad {
+      background: linear-gradient(135deg, var(--accent), var(--accent2), var(--accent3));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-sub {
+      font-size: 1.1rem;
+      color: var(--muted);
+      max-width: 560px;
+      margin: 0 auto 44px;
+      animation: fadeUp 0.7s ease 0.2s both;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+      animation: fadeUp 0.7s ease 0.3s both;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      color: var(--white);
+      border: none;
+      border-radius: 10px;
+      padding: 14px 32px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.25s;
+      font-family: var(--font-body);
+    }
+
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 16px 48px rgba(79,142,255,0.4); }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px 32px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.25s;
+      font-family: var(--font-body);
+    }
+
+    .btn-secondary:hover { border-color: var(--accent); color: var(--white); background: rgba(79,142,255,0.06); }
+
+    /* HERO MOCKUP */
+    .hero-mockup {
+      position: relative; z-index: 1;
+      margin: 70px auto 0;
+      max-width: 1000px;
+      padding: 0 48px;
+      animation: fadeUp 0.9s ease 0.4s both;
+    }
+
+    .mockup-window {
+      background: var(--surface);
+      border: 1px solid rgba(79,142,255,0.15);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 40px 120px rgba(0,0,0,0.65), 0 0 0 1px rgba(79,142,255,0.08);
+    }
+
+    .mockup-topbar {
+      background: var(--bg2);
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .mockup-dots { display: flex; gap: 6px; }
+    .mockup-dots span { width: 11px; height: 11px; border-radius: 50%; }
+    .mockup-dots span:nth-child(1) { background: #ff5f57; }
+    .mockup-dots span:nth-child(2) { background: #febc2e; }
+    .mockup-dots span:nth-child(3) { background: #28c840; }
+    .mockup-title { font-size: 0.8rem; color: var(--muted); margin-left: 6px; }
+
+    .mockup-body {
+      display: grid;
+      grid-template-columns: 210px 1fr;
+      gap: 0;
+      min-height: 280px;
+    }
+
+    .mockup-sidebar {
+      background: var(--bg2);
+      border-right: 1px solid var(--border);
+      padding: 18px 14px;
+    }
+
+    .sidebar-label { font-size: 0.68rem; color: var(--muted); text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 10px; padding-left: 8px; }
+
+    .sidebar-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 10px;
+      border-radius: 8px;
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 3px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .sidebar-item.active, .sidebar-item:hover { background: rgba(79,142,255,0.12); color: var(--accent); }
+
+    .mockup-main { padding: 20px; display: flex; flex-direction: column; gap: 14px; }
+
+    .code-block {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px 20px;
+      font-family: 'Courier New', monospace;
+      font-size: 0.78rem;
+      line-height: 1.75;
+      color: var(--muted);
+      flex: 1;
+    }
+
+    .kw { color: var(--accent2); }
+    .fn { color: var(--accent); }
+    .str { color: var(--accent3); }
+    .cm { color: #3d4a66; }
+
+    .ai-response {
+      background: linear-gradient(135deg, rgba(79,142,255,0.07), rgba(162,89,255,0.07));
+      border: 1px solid rgba(79,142,255,0.18);
+      border-radius: 10px;
+      padding: 14px 20px;
+      font-size: 0.82rem;
+      color: var(--text);
+    }
+
+    .ai-label {
+      font-size: 0.68rem;
+      color: var(--accent);
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 7px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .ai-label::before { content: ''; width: 6px; height: 6px; background: var(--accent3); border-radius: 50%; animation: pulse 1.5s infinite; }
+
+    /* ── CLIENTS ── */
+    .clients { position: relative; z-index: 1; padding: 50px 48px; text-align: center; }
+    .clients-label { font-size: 0.75rem; color: var(--muted); letter-spacing: 2.5px; text-transform: uppercase; margin-bottom: 36px; }
+    .clients-grid { display: flex; justify-content: center; align-items: center; gap: 20px; flex-wrap: wrap; }
+
+    .client-logo {
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--muted);
+      opacity: 0.55;
+      transition: all 0.25s;
+      padding: 10px 22px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      cursor: default;
+    }
+
+    .client-logo:hover { opacity: 1; border-color: rgba(79,142,255,0.3); color: var(--text); }
+
+    /* ── SECTION COMMONS ── */
+    section { position: relative; z-index: 1; }
+    .section-wrap { max-width: 1100px; margin: 0 auto; padding: 90px 48px; }
+
+    .section-label {
+      font-size: 0.72rem;
+      color: var(--accent);
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-label::before { content: ''; width: 20px; height: 1px; background: var(--accent); }
+
+    h2 {
+      font-family: var(--font-head);
+      font-weight: 800;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      color: var(--white);
+      line-height: 1.1;
+      letter-spacing: -1.5px;
+      margin-bottom: 18px;
+    }
+
+    .section-desc { font-size: 1rem; color: var(--muted); max-width: 520px; margin-bottom: 56px; line-height: 1.7; }
+
+    /* ── ABOUT ── */
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: center; }
+
+    .about-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 36px; }
+
+    .stat-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      transition: all 0.3s;
+    }
+
+    .stat-card:hover { border-color: rgba(79,142,255,0.3); transform: translateY(-3px); }
+
+    .stat-num {
+      font-family: var(--font-head);
+      font-size: 2.3rem;
+      font-weight: 800;
+      color: var(--white);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .stat-num span { color: var(--accent); }
+    .stat-label { font-size: 0.8rem; color: var(--muted); }
+
+    .skill-bars { display: flex; flex-direction: column; gap: 18px; }
+    .skill-bar-item { display: flex; flex-direction: column; gap: 8px; }
+    .skill-bar-label { display: flex; justify-content: space-between; font-size: 0.84rem; color: var(--text); }
+    .skill-bar-label span:last-child { color: var(--accent); font-weight: 600; }
+    .skill-bar-track { background: var(--surface); border-radius: 100px; height: 5px; overflow: hidden; }
+    .skill-bar-fill { height: 100%; border-radius: 100px; background: linear-gradient(90deg, var(--accent), var(--accent2)); }
+
+    /* ── SERVICES ── */
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+
+    .service-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 30px 26px;
+      transition: all 0.35s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.4s;
+    }
+
+    .service-card:hover::before { transform: scaleX(1); }
+    .service-card:hover { border-color: rgba(79,142,255,0.22); transform: translateY(-5px); box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
+
+    .service-icon {
+      width: 50px; height: 50px;
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.4rem;
+      margin-bottom: 18px;
+      background: rgba(79,142,255,0.1);
+    }
+
+    .service-card h3 {
+      font-family: var(--font-head);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 10px;
+    }
+
+    .service-card p { font-size: 0.86rem; color: var(--muted); line-height: 1.68; }
+
+    /* ── BENTO ── */
+    .bento-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 16px;
+    }
+
+    .bento-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 32px;
+      transition: border-color 0.3s;
+      overflow: hidden;
+    }
+
+    .bento-card:hover { border-color: rgba(79,142,255,0.22); }
+
+    .b1 { grid-column: span 7; }
+    .b2 { grid-column: span 5; }
+    .b3 { grid-column: span 4; }
+    .b4 { grid-column: span 4; }
+    .b5 { grid-column: span 4; }
+
+    .bento-card h3 { font-family: var(--font-head); font-size: 1.2rem; font-weight: 700; color: var(--white); margin-bottom: 10px; }
+    .bento-card p { font-size: 0.86rem; color: var(--muted); line-height: 1.68; }
+
+    .bento-big-num {
+      font-family: var(--font-head);
+      font-size: 5rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+
+    .bento-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(0,229,192,0.08);
+      border: 1px solid rgba(0,229,192,0.22);
+      color: var(--accent3);
+      border-radius: 100px;
+      padding: 4px 12px;
+      font-size: 0.73rem;
+      font-weight: 600;
+      margin-bottom: 18px;
+    }
+
+    .tech-chips { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 18px; }
+    .chip {
+      background: rgba(79,142,255,0.08);
+      border: 1px solid rgba(79,142,255,0.18);
+      color: var(--accent);
+      padding: 4px 12px;
+      border-radius: 100px;
+      font-size: 0.73rem;
+      font-weight: 600;
+    }
+
+    /* ── TESTIMONIALS ── */
+    .testimonials-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+
+    .testimonial-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px;
+      transition: all 0.3s;
+    }
+
+    .testimonial-card:hover { border-color: rgba(79,142,255,0.2); transform: translateY(-3px); }
+
+    .t-stars { color: #f6d860; font-size: 0.85rem; margin-bottom: 16px; letter-spacing: 3px; }
+    .t-quote { font-size: 0.9rem; color: var(--text); line-height: 1.78; margin-bottom: 24px; font-style: italic; }
+    .t-author { display: flex; align-items: center; gap: 14px; }
+
+    .t-avatar {
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-head);
+      font-weight: 800;
+      font-size: 0.95rem;
+      color: white;
+      flex-shrink: 0;
+    }
+
+    .t-name { font-weight: 600; color: var(--white); font-size: 0.88rem; }
+    .t-company { font-size: 0.76rem; color: var(--muted); margin-top: 2px; }
+
+    /* ── TEAM ── */
+    .team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+
+    .team-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px 22px;
+      text-align: center;
+      transition: all 0.3s;
+    }
+
+    .team-card:hover { border-color: rgba(79,142,255,0.25); transform: translateY(-5px); }
+
+    .team-avatar {
+      width: 70px; height: 70px;
+      border-radius: 50%;
+      margin: 0 auto 18px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-head);
+      font-weight: 800;
+      font-size: 1.4rem;
+      color: white;
+      border: 2px solid rgba(79,142,255,0.25);
+    }
+
+    .team-card h4 { font-family: var(--font-head); font-weight: 700; color: var(--white); font-size: 1rem; margin-bottom: 5px; }
+    .team-card p { font-size: 0.79rem; color: var(--muted); }
+
+    .team-badge {
+      display: inline-block;
+      margin-top: 12px;
+      background: rgba(79,142,255,0.08);
+      border: 1px solid rgba(79,142,255,0.2);
+      color: var(--accent);
+      padding: 3px 10px;
+      border-radius: 100px;
+      font-size: 0.69rem;
+      font-weight: 600;
+    }
+
+    /* ── FAQ ── */
+    .faq-list { max-width: 740px; margin: 0 auto; }
+    .faq-item { border-bottom: 1px solid var(--border); }
+
+    .faq-q {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 22px 0;
+      cursor: pointer;
+      font-size: 0.97rem;
+      font-weight: 600;
+      color: var(--text);
+      transition: color 0.2s;
+      gap: 16px;
+      user-select: none;
+    }
+
+    .faq-q:hover { color: var(--white); }
+
+    .faq-icon {
+      width: 28px; height: 28px;
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.75rem;
+      flex-shrink: 0;
+      color: var(--accent);
+      transition: all 0.3s;
+    }
+
+    .faq-item.open .faq-icon { background: var(--accent); color: white; border-color: var(--accent); transform: rotate(180deg); }
+
+    .faq-a {
+      font-size: 0.88rem;
+      color: var(--muted);
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.3s;
+      line-height: 1.75;
+    }
+
+    .faq-item.open .faq-a { max-height: 300px; padding-bottom: 22px; }
+
+    /* ── CONTACT ── */
+    .cta-section {
+      background: linear-gradient(135deg, rgba(79,142,255,0.07), rgba(162,89,255,0.07));
+      border: 1px solid rgba(79,142,255,0.14);
+      border-radius: 28px;
+      padding: 72px 56px;
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .cta-section p { color: var(--muted); font-size: 1rem; margin-bottom: 44px; max-width: 480px; margin-left: auto; margin-right: auto; }
+
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-bottom: 44px; text-align: left; }
+
+    .contact-item {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px;
+      transition: border-color 0.2s;
+    }
+
+    .contact-item:hover { border-color: rgba(79,142,255,0.28); }
+    .contact-item-icon { font-size: 1.3rem; margin-bottom: 10px; }
+    .contact-item-label { font-size: 0.72rem; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 5px; }
+    .contact-item-value { font-size: 0.88rem; color: var(--white); font-weight: 500; word-break: break-all; }
+
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 14px; }
+    .form-group { display: flex; flex-direction: column; gap: 7px; text-align: left; }
+    .form-group label { font-size: 0.8rem; color: var(--muted); }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 16px;
+      color: var(--white);
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      outline: none;
+      transition: border-color 0.2s;
+      width: 100%;
+      -webkit-appearance: none;
+    }
+
+    .form-group input:focus, .form-group textarea:focus, .form-group select:focus { border-color: var(--accent); }
+    .form-group textarea { min-height: 100px; resize: vertical; }
+
+    /* ── FOOTER ── */
+    footer {
+      position: relative; z-index: 1;
+      border-top: 1px solid var(--border);
+      padding: 52px 48px;
+    }
+
+    .footer-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 48px;
+    }
+
+    .footer-brand p { font-size: 0.85rem; color: var(--muted); margin-top: 16px; max-width: 280px; line-height: 1.75; }
+
+    .footer-col h5 {
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: 0.78rem;
+      color: var(--white);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 18px;
+    }
+
+    .footer-col a {
+      display: block;
+      font-size: 0.85rem;
+      color: var(--muted);
+      text-decoration: none;
+      margin-bottom: 10px;
+      transition: color 0.2s;
+    }
+
+    .footer-col a:hover { color: var(--white); }
+
+    .footer-bottom {
+      max-width: 1100px;
+      margin: 32px auto 0;
+      padding-top: 28px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.35; }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal.visible { opacity: 1; transform: none; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 920px) {
+      nav { padding: 0 24px; }
+      .nav-links { display: none; }
+      .hero { padding: 60px 24px 50px; }
+      .hero-mockup { padding: 0 24px; }
+      .mockup-body { grid-template-columns: 1fr; }
+      .mockup-sidebar { display: none; }
+      .section-wrap { padding: 64px 24px; }
+      .about-grid { grid-template-columns: 1fr; }
+      .services-grid { grid-template-columns: 1fr 1fr; }
+      .b1, .b2, .b3, .b4, .b5 { grid-column: span 12; }
+      .testimonials-grid { grid-template-columns: 1fr; }
+      .team-grid { grid-template-columns: 1fr 1fr; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .footer-inner { grid-template-columns: 1fr 1fr; gap: 32px; }
+      .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+      .cta-section { padding: 48px 24px; }
+      footer { padding: 48px 24px; }
+      .clients { padding: 40px 24px; }
+    }
+
+    @media (max-width: 560px) {
+      .services-grid { grid-template-columns: 1fr; }
+      .about-stats { grid-template-columns: 1fr 1fr; }
+      h1 { font-size: 2.5rem; }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ══════════════════ NAV ══════════════════ -->
+<nav>
+  <a href="#home" class="nav-logo">
+    <span class="logo-dot"></span> KNR TECH
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#why-us">Why Us</a></li>
+    <li><a href="#testimonials">Clients</a></li>
+    <li><a href="#team">Team</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+  </ul>
+</nav>
+
+<!-- ══════════════════ MARQUEE ══════════════════ -->
+<div class="marquee-banner">
+  <div class="marquee-track">
+    <span>🚀 Web Development</span>
+    <span>📱 Android &amp; iOS Apps</span>
+    <span>⛓️ Blockchain Technology</span>
+    <span>📊 Data Science &amp; Python</span>
+    <span>💼 SAP ABAP SD GTS</span>
+    <span>🛒 E-Commerce Solutions</span>
+    <span>🔒 OTP Authentication</span>
+    <span>☁️ Cloud Hosting</span>
+    <span>⚡ Website Speed Optimization</span>
+    <span>📧 Email Marketing</span>
+    <span>🚀 Web Development</span>
+    <span>📱 Android &amp; iOS Apps</span>
+    <span>⛓️ Blockchain Technology</span>
+    <span>📊 Data Science &amp; Python</span>
+    <span>💼 SAP ABAP SD GTS</span>
+    <span>🛒 E-Commerce Solutions</span>
+    <span>🔒 OTP Authentication</span>
+    <span>☁️ Cloud Hosting</span>
+    <span>⚡ Website Speed Optimization</span>
+    <span>📧 Email Marketing</span>
+  </div>
+</div>
+
+<!-- ══════════════════ HERO ══════════════════ -->
+<section id="home">
+  <div class="hero">
+    <div class="hero-glow"></div>
+
+    <div class="hero-badge">
+      <span class="badge-dot"></span>
+      Bangalore's Trusted Digital Partner Since 2019
+    </div>
+
+    <h1>
+      Web, Android &amp;<br/>
+      <span class="grad">Blockchain Solutions.</span><br/>
+      All in One Team.
+    </h1>
+
+    <p class="hero-sub">
+      KNR Tech Solutions brings together expert web design, app development, blockchain,
+      data science and SAP consulting — all under one roof. One partner. Unlimited possibilities.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">Start a Project &nbsp;→</a>
+      <a href="#services" class="btn-secondary">Explore Services</a>
+    </div>
+  </div>
+
+  <!-- Mockup -->
+  <div class="hero-mockup">
+    <div class="mockup-window">
+      <div class="mockup-topbar">
+        <div class="mockup-dots"><span></span><span></span><span></span></div>
+        <span class="mockup-title">KNR Tech Solutions — Project Dashboard</span>
+      </div>
+      <div class="mockup-body">
+        <div class="mockup-sidebar">
+          <div class="sidebar-label">Services</div>
+          <div class="sidebar-item active">🌐&nbsp; Web Development</div>
+          <div class="sidebar-item">📱&nbsp; Android Apps</div>
+          <div class="sidebar-item">⛓️&nbsp; Blockchain</div>
+          <div class="sidebar-item">📊&nbsp; Data Science</div>
+          <div class="sidebar-item">🛒&nbsp; E-Commerce</div>
+          <div class="sidebar-item">💼&nbsp; SAP ABAP</div>
+        </div>
+        <div class="mockup-main">
+          <div class="code-block">
+            <span class="cm">// KNR Tech Solutions – Production-Ready React App</span><br/>
+            <span class="kw">import</span> React, { useState } <span class="kw">from</span> <span class="str">'react'</span>;<br/>
+            <span class="kw">import</span> { PaymentGateway, BlockchainSDK } <span class="kw">from</span> <span class="str">'@knrtech/sdk'</span>;<br/><br/>
+            <span class="kw">const</span> <span class="fn">KNRApp</span> = () =&gt; {<br/>
+            &nbsp;&nbsp;<span class="kw">const</span> [wallet] = <span class="fn">BlockchainSDK</span>.<span class="fn">useWallet</span>();<br/>
+            &nbsp;&nbsp;<span class="kw">return</span> &lt;<span class="fn">Dashboard</span> wallet={wallet} secure={<span class="kw">true</span>} /&gt;;<br/>
+            };<br/><br/>
+            <span class="kw">export default</span> <span class="fn">KNRApp</span>; <span class="cm">// ✓ Deployed on cloud</span>
+          </div>
+          <div class="ai-response">
+            <div class="ai-label">KNR Tech — Build Complete</div>
+            ✅ React + Blockchain integration optimized &nbsp;|&nbsp; 🔒 Payment gateway secured with OTP &nbsp;|&nbsp; 🚀 SEO-optimized &amp; responsive across all breakpoints &nbsp;|&nbsp; ☁️ Deployed on cloud hosting with 99.9% uptime
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ CLIENTS ══════════════════ -->
+<section>
+  <div class="clients">
+    <div class="clients-label">Trusted by businesses across India</div>
+    <div class="clients-grid">
+      <div class="client-logo">MVP Infotech</div>
+      <div class="client-logo">4 Seasons Homestay</div>
+      <div class="client-logo">SHAMAN NFT Platform</div>
+      <div class="client-logo">SAN Polychem</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ ABOUT ══════════════════ -->
+<section id="about">
+  <div class="section-wrap">
+    <div class="about-grid reveal">
+      <div>
+        <div class="section-label">About Us</div>
+        <h2>Making digital <span class="grad">less complex</span></h2>
+        <p style="font-size:0.95rem; color:var(--muted); line-height:1.8; margin-bottom:20px;">
+          We're KNR Tech Solutions — an experienced team of web design, web development, Android development,
+          data science and SAP (SD ABAP GTS) experts united by one goal: making digital simpler and more
+          profitable for your business.
+        </p>
+        <p style="font-size:0.95rem; color:var(--muted); line-height:1.8; margin-bottom:36px;">
+          Whether you need a brand new website or help managing an existing one, we consistently deliver
+          world-class solutions on time, on budget — with no excuses.
+        </p>
+
+        <div class="skill-bars">
+          <div class="skill-bar-item">
+            <div class="skill-bar-label"><span>Web Design &amp; Development</span><span>95%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" style="width:95%"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label"><span>Application Development</span><span>80%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" style="width:80%"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label"><span>Blockchain Technology</span><span>75%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" style="width:75%"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label"><span>Data Science</span><span>60%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" style="width:60%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-stats">
+        <div class="stat-card">
+          <div class="stat-num">5<span>+</span></div>
+          <div class="stat-label">Years of Experience</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">50<span>+</span></div>
+          <div class="stat-label">Projects Delivered</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">24<span>/7</span></div>
+          <div class="stat-label">Support Available</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">100<span>%</span></div>
+          <div class="stat-label">Client Satisfaction</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ SERVICES ══════════════════ -->
+<section id="services">
+  <div class="section-wrap">
+    <div class="section-label">Our Services</div>
+    <h2>Everything your <span class="grad">business needs</span></h2>
+    <p class="section-desc">From design to deployment — end-to-end digital solutions tailored to your goals and budget.</p>
+
+    <div class="services-grid reveal">
+      <div class="service-card">
+        <div class="service-icon">📱</div>
+        <h3>Mobile &amp; Web Apps</h3>
+        <p>We build powerful Android and iOS applications with seamless UX, scalable architecture, and production-ready code for every platform.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🛒</div>
+        <h3>E-Commerce Solutions</h3>
+        <p>Full-featured e-commerce platforms with payment gateway integration, secure transactions, and m-commerce advantages built for conversions.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">⛓️</div>
+        <h3>Blockchain Technology</h3>
+        <p>Decentralized digital ledgers and Web3 platforms built on leading blockchain frameworks — secure, immutable, and future-ready.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🎨</div>
+        <h3>Web Design</h3>
+        <p>Aesthetically pleasing, user-centric designs with unique layouts, vibrant transitions, and fully responsive builds for every screen.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">💻</div>
+        <h3>Web Development</h3>
+        <p>Custom solutions using React and Angular. SEO-optimized, mobile-first, and engineered for performance, reliability, and scale.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">📊</div>
+        <h3>Data Science</h3>
+        <p>Statistical analysis and visualization using Python, NumPy, Pandas, and Seaborn. Turn raw data into clear, actionable business insights.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ WHY US / BENTO ══════════════════ -->
+<section id="why-us">
+  <div class="section-wrap">
+    <div class="section-label">Why KNR Tech</div>
+    <h2>State of the art <span class="grad">performance</span></h2>
+    <p class="section-desc">Creative design, cutting-edge technology, and enterprise-grade delivery — your competitive edge, delivered.</p>
+
+    <div class="bento-grid reveal">
+      <div class="bento-card b1">
+        <div class="bento-tag">✦ Creative Design</div>
+        <h3>Creative minds working with creative people</h3>
+        <p>Every design is unique — built with custom layouts, vibrant transitions, and responsive builds that make your brand impossible to ignore. We don't do templates. We build digital identities.</p>
+        <div class="tech-chips">
+          <span class="chip">React</span>
+          <span class="chip">Angular</span>
+          <span class="chip">Node.js</span>
+          <span class="chip">Python</span>
+          <span class="chip">Solidity</span>
+          <span class="chip">Android</span>
+        </div>
+      </div>
+      <div class="bento-card b2">
+        <div class="bento-big-num">24/7</div>
+        <h3>Always Available</h3>
+        <p>Round-the-clock support and monitoring — we work whenever you need us, day or night, weekday or weekend.</p>
+      </div>
+      <div class="bento-card b3">
+        <div class="service-icon">🎯</div>
+        <h3>Unique Layouts</h3>
+        <p>Custom responsive designs with colourful transitions, tailored to your brand personality and user audience.</p>
+      </div>
+      <div class="bento-card b4">
+        <div class="service-icon">🔒</div>
+        <h3>Enterprise Security</h3>
+        <p>OTP authentication, encrypted APIs, and compliance-ready infrastructure protecting your business data at every layer.</p>
+      </div>
+      <div class="bento-card b5">
+        <div class="service-icon">🚀</div>
+        <h3>Fast Delivery</h3>
+        <p>On-time, on-budget delivery with no excuses — every project executed at production quality with detailed planning and testing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ TESTIMONIALS ══════════════════ -->
+<section id="testimonials">
+  <div class="section-wrap">
+    <div class="section-label">Client Stories</div>
+    <h2>Trusted by <span class="grad">businesses</span> across India</h2>
+    <p class="section-desc">See why companies choose KNR Tech Solutions to power their digital presence.</p>
+
+    <div class="testimonials-grid reveal">
+      <div class="testimonial-card">
+        <div class="t-stars">★★★★★</div>
+        <p class="t-quote">"KNR Tech Solutions recently launched our new website. It was a great honour to work with them — the team focused on all aspects from design to making the interface user-friendly. Narayana and Rineesh coordinated this brilliantly from the KNR Tech side. Delivered to a very high standard."</p>
+        <div class="t-author">
+          <div class="t-avatar">MP</div>
+          <div>
+            <div class="t-name">M Prasad Reddy</div>
+            <div class="t-company">MVP Infotech</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="t-stars">★★★★★</div>
+        <p class="t-quote">"KNR Tech Solutions increased our booking conversion rates by 12% in just 4 weeks. Their team is very knowledgeable, professional and extremely well organized. An exceptional experience from start to finish."</p>
+        <div class="t-author">
+          <div class="t-avatar">M</div>
+          <div>
+            <div class="t-name">Mahesh</div>
+            <div class="t-company">4 Seasons Homestay</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="t-stars">★★★★★</div>
+        <p class="t-quote">"The project delivery has been hassle-free and up to the mark. Communication is clear and post-implementation support is prompt. We are planning to work with them on another bundle of projects coming this month. Highly recommended!"</p>
+        <div class="t-author">
+          <div class="t-avatar">BD</div>
+          <div>
+            <div class="t-name">Biala David</div>
+            <div class="t-company">SHAMAN – NFT Platform</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="t-stars">★★★★★</div>
+        <p class="t-quote">"Sanpolychem has been working with KNR Tech Solutions for over 2+ years now. They've done amazing work — providing strategic advisory and workable solutions focused on clear objectives. We thank KNR Tech for all the services."</p>
+        <div class="t-author">
+          <div class="t-avatar">P</div>
+          <div>
+            <div class="t-name">Prabhav</div>
+            <div class="t-company">SAN Polychem</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ TEAM ══════════════════ -->
+<section id="team">
+  <div class="section-wrap">
+    <div class="section-label">Our Team</div>
+    <h2>Meet the <span class="grad">experts</span></h2>
+    <p class="section-desc">A passionate team of developers, designers and engineers dedicated to delivering your vision.</p>
+
+    <div class="team-grid reveal">
+      <div class="team-card">
+        <div class="team-avatar">NR</div>
+        <h4>Narra Rineesh</h4>
+        <p>Fullstack Developer</p>
+        <div class="team-badge">Tech Lead</div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">DS</div>
+        <h4>Dewan Shakil</h4>
+        <p>Frontend Developer</p>
+        <div class="team-badge">UI / UX</div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">KN</div>
+        <h4>Narayana K</h4>
+        <p>Founder &amp; Architect</p>
+        <div class="team-badge">Strategy</div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">SK</div>
+        <h4>Sankara</h4>
+        <p>Mobile Expert</p>
+        <div class="team-badge">Android &amp; iOS</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ FAQ ══════════════════ -->
+<section id="faq">
+  <div class="section-wrap">
+    <div style="text-align:center; margin-bottom:60px;">
+      <div class="section-label" style="justify-content:center;">FAQ</div>
+      <h2>Frequently Asked <span class="grad">Questions</span></h2>
+      <p class="section-desc" style="max-width:480px; margin:0 auto;">Don't hesitate to reach out if you can't find what you're looking for below.</p>
+    </div>
+
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          What services does KNR Tech Solutions offer?
+          <div class="faq-icon">▾</div>
+        </div>
+        <div class="faq-a">
+          We offer end-to-end digital services: web design, web development (React, Angular), Android &amp; iOS app development, blockchain &amp; Web3 platforms, e-commerce solutions with payment gateways, data science (Python, Pandas, NumPy, Seaborn), SAP (ABAP, SD, GTS), OTP authentication, cloud hosting, email marketing, and website speed optimization.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Where is KNR Tech Solutions located?
+          <div class="faq-icon">▾</div>
+        </div>
+        <div class="faq-a">
+          We are based at 35/A ITI Layout, HSR Layout, Bangalore, Karnataka – 560068, India. We serve clients across Bangalore, pan-India, and internationally through remote engagement.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Do you provide post-delivery support?
+          <div class="faq-icon">▾</div>
+        </div>
+        <div class="faq-a">
+          Absolutely. We offer 24/7 availability and prompt post-implementation support. Our clients — including Biala David from SHAMAN NFT — confirm that our communication is clear and support is fast throughout and well after project delivery.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Can you handle both design and full-stack development?
+          <div class="faq-icon">▾</div>
+        </div>
+        <div class="faq-a">
+          Yes. We are a full-stack team. From UI/UX design and frontend (React, Angular) to backend APIs, database architecture, blockchain integration, and cloud deployment — we own the complete product lifecycle so you have one accountable partner.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          How do I start a project with KNR Tech?
+          <div class="faq-icon">▾</div>
+        </div>
+        <div class="faq-a">
+          Fill out the contact form below or email narayana@knrtech.in or call +91-6300816832. We'll schedule a discovery call to understand your requirements, goals, and timeline — then provide a detailed proposal at no cost.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Do you work with startups as well as established enterprises?
+          <div class="faq-icon">▾</div>
+        </div>
+        <div class="faq-a">
+          Yes — we work with everyone from early-stage startups to established businesses. Our solutions are tailored to your scale, budget, and objectives regardless of company size.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ CONTACT ══════════════════ -->
+<section id="contact">
+  <div class="section-wrap">
+    <div class="cta-section reveal">
+      <div class="section-label" style="justify-content:center; margin-bottom:16px;">Contact Us</div>
+      <h2>Let's build something <span class="grad">great together</span></h2>
+      <p>Ready to go digital? Tell us about your project and we'll respond within 24 hours.</p>
+
+      <div class="contact-grid">
+        <div class="contact-item">
+          <div class="contact-item-icon">📧</div>
+          <div class="contact-item-label">Email</div>
+          <div class="contact-item-value">narayana@knrtech.in</div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">📞</div>
+          <div class="contact-item-label">Phone</div>
+          <div class="contact-item-value">+91-6300816832</div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">📍</div>
+          <div class="contact-item-label">Address</div>
+          <div class="contact-item-value">35/A ITI Layout, HSR Layout, Bangalore 560068</div>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" placeholder="John Doe" />
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" placeholder="john@company.com" />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" placeholder="+91 00000 00000" />
+        </div>
+        <div class="form-group">
+          <label>Service Required</label>
+          <select>
+            <option value="">Select a service...</option>
+            <option>Web Design &amp; Development</option>
+            <option>Android / iOS App Development</option>
+            <option>Blockchain / Web3 Development</option>
+            <option>E-Commerce Solution</option>
+            <option>Data Science</option>
+            <option>SAP ABAP / SD / GTS</option>
+            <option>Cloud Hosting</option>
+            <option>OTP Authentication</option>
+            <option>Email Marketing</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group" style="margin-bottom:24px;">
+        <label>Project Details</label>
+        <textarea placeholder="Tell us about your project, goals, and timeline..."></textarea>
+      </div>
+      <button id="submitBtn" class="btn-primary" onclick="handleSubmit()" style="width:100%; justify-content:center; font-size:1rem; padding:16px; border-radius:12px;">
+        Send Message &nbsp;→
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ FOOTER ══════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="nav-logo" style="text-decoration:none; pointer-events:none;">
+        <span class="logo-dot"></span> KNR TECH
+      </div>
+      <p>Experienced team of web design, development, Android, blockchain, data science and SAP experts delivering world-class digital solutions from Bangalore, India.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Services</h5>
+      <a href="#services">Web Development</a>
+      <a href="#services">Android &amp; iOS Apps</a>
+      <a href="#services">Blockchain / Web3</a>
+      <a href="#services">Data Science</a>
+      <a href="#services">SAP ABAP</a>
+      <a href="#services">E-Commerce</a>
+    </div>
+    <div class="footer-col">
+      <h5>Company</h5>
+      <a href="#about">About Us</a>
+      <a href="#team">Our Team</a>
+      <a href="#testimonials">Client Stories</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h5>Get In Touch</h5>
+      <a href="mailto:narayana@knrtech.in">narayana@knrtech.in</a>
+      <a href="tel:+916300816832">+91-6300816832</a>
+      <a href="#contact">35/A ITI Layout</a>
+      <a href="#contact">HSR Layout, Bangalore 560068</a>
+      <a href="#contact">Karnataka, India</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2024 KNR Tech Solutions. Design &amp; Developed by KNR.</span>
+    <span>Made with ♥ in Bangalore, India</span>
+  </div>
+</footer>
+
+<script>
+  // FAQ toggle
+  function toggleFaq(el) {
+    const item = el.parentElement;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+
+  // Form submit feedback
+  function handleSubmit() {
+    const btn = document.getElementById('submitBtn');
+    btn.innerHTML = '✓ Message Sent!';
+    btn.style.background = 'linear-gradient(135deg, #00e5c0, #4f8eff)';
+    btn.disabled = true;
+    setTimeout(() => {
+      btn.innerHTML = 'Send Message &nbsp;→';
+      btn.style.background = '';
+      btn.disabled = false;
+    }, 3500);
+  }
+
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        revealObserver.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  reveals.forEach(r => revealObserver.observe(r));
+
+  // Stagger service cards
+  document.querySelectorAll('.service-card, .team-card, .testimonial-card').forEach((el, i) => {
+    el.style.transitionDelay = (i * 0.07) + 's';
+  });
+
+  // Nav active highlight on scroll
+  const sections = document.querySelectorAll('section[id]');
+  const navAs = document.querySelectorAll('.nav-links a');
+  window.addEventListener('scroll', () => {
+    let cur = '';
+    sections.forEach(s => {
+      if (window.scrollY >= s.offsetTop - 90) cur = s.id;
+    });
+    navAs.forEach(a => {
+      a.style.color = a.getAttribute('href') === '#' + cur ? 'var(--white)' : '';
+    });
+  });
+</script>
+
+</body>
+</html>
